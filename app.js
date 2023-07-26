@@ -10,7 +10,7 @@ let initialDimensions = {
 };
 
 (async () => {
-    await sharp(process.argv[2])
+    await sharp(sourceFile)
         .metadata()
         .then(data => {
 
